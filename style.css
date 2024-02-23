@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*background-color: rgb(250, 243, 215);*/
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(234, 227, 201);
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(234, 227, 201);
+    height: 100px;
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(188, 182, 160);
+    color: rgb(62, 62, 62);
+    font-style: italic;
+    width: 100%;
+}
+footer p {
+    padding: 5px;
+}
+
+header h1 {
+    font-family:'Old English Text MT';
+    font-size: 50px;
+    padding: 15px;
+}
+.arrowbutton {
+    background-color: rgb(188, 182, 160);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border: 1px solid black;
+}
+.arrowbutton:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.datebar {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(188, 182, 160);
+    font-style: italic;
+    color: rgb(62, 62, 62);
+    width: 100%;
+}
+
+.datebar p {
+    margin-left: 25px;
+}
+
+article{
+    background-color:rgb(244, 238, 217);
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+}
+
+.textbox {
+    padding-top: 25px;
+}
+
+.textbox div {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    border-bottom: 1px dotted black;
+    padding: 5px;
+}
+
+img {
+    float: right;
+    width: 50%;
+    border: 1px solid black;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    img {
+        width:60%
+    }
+    .arrowbutton {
+        height: 30px;
+        width: 30px;
+        font-size: 20px;
+    }
+    article{
+        width: 90%;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 30px;
+    }
+    img {
+        width: 70%;
+    }
+}
